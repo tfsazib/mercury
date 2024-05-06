@@ -1,0 +1,193 @@
+/**
+ * WEBSITE: https://zeon.studio/
+ * TWITTER: https://twitter.com/zeon_studio/
+ * FACEBOOK: https://facebook.com/heyzeonstudio/
+ * GITHUB: https://github.com/zeon-studio/
+ */
+
+input#nav-toggle:checked + label #show-button {
+    display: none
+}
+
+input#nav-toggle:checked + label #hide-button {
+    display: block
+}
+
+input#nav-toggle:checked ~ #nav-menu {
+    display: block
+}
+
+.header {
+    --tw-bg-opacity: 1;
+    background-color: rgb(1 21 48 / var(--tw-bg-opacity));
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+}
+
+.header:is(.dark *) {
+    background-color: 
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(186 186 186 / var(--tw-text-opacity))
+}
+
+.navbar-brand:is(.dark *) {
+    color: 
+}
+.navbar-brand image {
+    max-height: 100%;
+    max-width: 100%
+}
+
+.navbar-nav {
+    text-align: center
+}
+
+@media (min-width: 1024px) {
+
+    .navbar-nav {
+        text-align: left
+    }
+}
+
+.nav-link {
+    display: block;
+    padding: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms
+}
+
+.nav-link:hover {
+    --tw-text-opacity: 1;
+    color: rgb(2 131 252 / var(--tw-text-opacity))
+}
+
+@media (min-width: 1024px) {
+
+    .nav-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem
+    }
+}
+
+.nav-dropdown {
+    margin-right: 0px
+}
+
+.nav-dropdown-list {
+    z-index: 10;
+    min-width: 180px;
+    border-radius: 0.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(8 33 67 / var(--tw-bg-opacity));
+    padding: 1rem;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 6px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05)
+}
+
+.nav-dropdown-list:is(.dark *) {
+    background-color: 
+}
+
+.nav-dropdown-item {
+    margin-bottom: 0.5rem
+}
+
+.nav-dropdown-link {
+    display: block;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms
+}
+
+.nav-dropdown-link:hover {
+    --tw-text-opacity: 1;
+    color: rgb(2 131 252 / var(--tw-text-opacity))
+}
+
+.nav-dropdown-link:is(.dark *) {
+    color: 
+}
+
+.nav-dropdown-link:hover:is(.dark *) {
+    color: 
+}
+
+.theme-switcher {
+    display: inline-flex
+}
+.theme-switcher label {
+    position: relative;
+    display: inline-block;
+    height: 1rem;
+    width: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(5 34 78 / var(--tw-bg-opacity))
+}
+@media (min-width: 1024px) {
+
+    .theme-switcher label {
+        width: 2.5rem
+    }
+}
+.theme-switcher input {
+    position: absolute;
+    opacity: 0
+}
+.theme-switcher span {
+    position: absolute;
+    top: -0.25rem;
+    left: 0px;
+    display: flex;
+    height: 1.5rem;
+    width: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(186 186 186 / var(--tw-bg-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms
+}
+.theme-switcher span:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+@media (min-width: 1024px) {
+
+    .theme-switcher input:checked + label span {
+        left: 1rem
+    }
+}

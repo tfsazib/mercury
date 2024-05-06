@@ -1,0 +1,161 @@
+/**
+ * WEBSITE: https://zeon.studio/
+ * TWITTER: https://twitter.com/zeon_studio/
+ * FACEBOOK: https://facebook.com/heyzeonstudio/
+ * GITHUB: https://github.com/zeon-studio/
+ */
+
+html {
+
+    font-size: 12.8px
+}
+
+@media (min-width: 768px) {
+
+    html {
+
+        font-size: 16px
+    }
+}
+
+body {
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(1 21 48 / var(--tw-bg-opacity));
+
+    font-family: Poppins, sans-serif;
+
+    font-weight: 400;
+
+    line-height: 1.625;
+
+    --tw-text-opacity: 1;
+
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+body:is(.dark *) {
+
+    background-color: ;
+
+    color: 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: , ;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    --tw-text-opacity: 1;
+
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+h1:is(.dark *),
+h2:is(.dark *),
+h3:is(.dark *),
+h4:is(.dark *),
+h5:is(.dark *),
+h6:is(.dark *) {
+
+    color: 
+}
+
+h1,
+.h1 {
+
+    font-size: 2.6873856rem
+}
+
+@media (min-width: 768px) {
+
+    h1,
+.h1 {
+
+        font-size: 2.9859839999999997rem
+    }
+}
+
+h2,
+.h2 {
+
+    font-size: 2.239488rem
+}
+
+@media (min-width: 768px) {
+
+    h2,
+.h2 {
+
+        font-size: 2.48832rem
+    }
+}
+
+h3,
+.h3 {
+
+    font-size: 1.86624rem
+}
+
+@media (min-width: 768px) {
+
+    h3,
+.h3 {
+
+        font-size: 2.0736rem
+    }
+}
+
+h4,
+.h4 {
+
+    font-size: 1.728rem
+}
+
+h5,
+.h5 {
+
+    font-size: 1.44rem
+}
+
+h6,
+.h6 {
+
+    font-size: 1.2rem
+}
+
+b,
+strong {
+
+    font-weight: 600
+}
+
+code::after {
+
+    content: var(--tw-content);
+
+    border-style: none
+}
+
+blockquote > p {
+
+    margin-top: 0px !important;
+
+    margin-bottom: 0px !important
+}
+
+p {
+
+    --tw-text-opacity: 1;
+
+    color: rgb(186 186 186 / var(--tw-text-opacity))
+}
