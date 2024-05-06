@@ -34,7 +34,7 @@
   />
 
   <!-- title -->
-  <title>Themeplate</title>
+  <title>Mercury</title>
 
   <!-- noindex robots -->
   <meta name="robots" content="" />
@@ -80,6 +80,8 @@
   />
 
   <!-- styles -->
+  <!-- AOS style -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Swiper slider -->
   <link rel="stylesheet" href="plugins/swiper/swiper-bundle.css" />
 
@@ -175,10 +177,10 @@
                     <p>Donec sollicitudin molestie malesda sollitudin</p>
                 </div>
                 <div class="pt-10 pb-5">
-                    <div class="flex items-center justify-center gap-2 cursor-pointer py-4 border border-border rounded">
+                    <a href="#" class="flex items-center justify-center gap-2 cursor-pointer py-4 border border-border rounded">
                         <img src="images/google-icon.png" alt="icon">
                         <p class="text-text">Sign Up With Google</p>
-                    </div>
+                    </a>
                     <div class="w-full h-[1px] bg-theme-light mt-10 relative">
                         <span class="text-dark bg-body px-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap">Or Sign In With Email</span>
                     </div>
@@ -329,6 +331,12 @@
 <!-- <script src="plugins/jquery/jquery.min.js"></script> -->
 <!-- Swiper JS -->
 <script src="plugins/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- AOS JS -->
+<script>
+  AOS.init();
+  const rellax = new Rellax(".rellax");
+</script>
 <!-- Main Script -->
 <script src="scripts/main.js"></script>
 </body>
