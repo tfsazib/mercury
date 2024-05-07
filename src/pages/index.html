@@ -1,15 +1,8 @@
 <!-- Banner -->
-<section class="section-sm bg-image">
+<section class="section-sm">
   <!-- circle-pattern -->
-  <div>
-    <figure>
-      <img src="images/bg-circle-pattern-2.png" alt="circle-pattern" class="absolute top-[20%] left-0 w-20 xl:w-auto" />
-    </figure>
-    <figure>
-      <img src="images/bg-circle-pattern-3.png" alt="circle-pattern"
-        class="absolute top-[50%] right-0 w-20 xl:w-auto" />
-    </figure>
-  </div>
+  <img src="images/bg-circle-pattern-2.png" alt="circle-pattern" class="absolute top-[20%] left-0 w-20 xl:w-auto" />
+  <img src="images/bg-circle-pattern-3.png" alt="circle-pattern" class="absolute top-[50%] right-0 w-20 xl:w-auto" />
   <!-- circle-pattern end -->
 
   <div class="container">
@@ -22,11 +15,13 @@
           Lorem ipsum dolor amet, consectetur adipiscing Vulputate varius
         </p>
       </div>
-      <div class="mx-auto w-[300px] md:w-[500px] flex justify-between items-center bg-theme-light p-0 rounded-3xl">
+      
+      <div class="flex justify-between items-center bg-theme-light p-0 rounded-3xl">
         <input type="text" placeholder="Enter Your Email For Subscription"
           class="w-full bg-theme-light rounded-3xl border-none focus:ring-0 focus:outline-none text-sm px-5">
         <button class="btn btn-primary">Subscribe Now</button>
       </div>
+
       <div class="mx-auto text-center relative">
         <img src="images/hero-img-1.png" alt="hero-img">
         <img src="images/hero-img-2.png" alt="hero-img"
@@ -38,9 +33,11 @@
 </section>
 
 
+<button class="b btn">click</button>
 
 
-<section class="section-sm bg-image">
+
+<section class="section-sm">
   <div class="container">
     <div class="mx-auto lg:max-w-xl md:max-w-lg text-center pb-10">
       <h2 class="mb-4 text-h4 lg:text-h2">
@@ -118,8 +115,7 @@
 
 
 
-
-<section class="section-sm bg-image">
+<section class="section-sm">
   <div class="container">
     <div class="grid xl:grid-cols-2 xl:gap-10">
       <div>
@@ -173,7 +169,7 @@
   </div>
 </section>
 
-<section class="section-sm bg-image">
+<section class="section-sm">
   <div class="container">
     <div class="mx-auto lg:max-w-2xl md:max-w-xl text-center pb-10">
       <h2 class="mb-4 text-h4 lg:text-h2">Powerful Analytical tool for The
@@ -218,76 +214,41 @@
   </div>
 </section>
 
-<section class="section-sm bg-image">
+
+
+
+
+
+<!-- Testimonials -->
+<section class="section-sm">
   <div class="container">
     <div class="grid lg:grid-cols-2 gap-10">
       <div>
         <div class="flex justify-between items-center gap-10">
           <h2 class="mb-4 text-h4 lg:text-h2">Our Customer Always Loves What We Do</h2>
-          <svg class="hidden lg:block" width="10" height="100" viewBox="0 0 8 69" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="8" height="40" rx="4" fill="#20AEFE" />
-            <rect y="47" width="8" height="8" rx="4" fill="#20AEFE" />
-            <rect y="61" width="8" height="8" rx="4" fill="#20AEFE" />
-          </svg>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nulla metus quisque aenean. Ornare amet facilisi
           aliquam tortor cursus auctor volutpat fringilla convallis. Lorem ipsum dolor sit, amet consectetur adipisicing
           elit. Eligendi, id? </p>
       </div>
-      <div class="grid gap-10">
-        <div class="bg-theme-light p-10 rounded-2xl">
-          <div>
-            <div class="flex items-center gap-5">
-              <div>
-                <img src="images/icon-10.png" alt="icon" class="hidden sm:block">
-                <img src="images/customer-1.png" alt="customer" class="max-w-20 block sm:hidden">
-                <p class=" pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nulla metus quisque aenean.
-                  Ornare amet facilisi aliquam tortor cursus auctor volutpat fringilla convallis. </p>
-              </div>
-              <div>
-                <img src="images/customer-1.png" alt="customer" class="max-w-72 hidden sm:block">
-              </div>
-            </div>
-            <h6 class="pt-5">Andrew Saymonds</h6>
+      <div class="swiper testimonial-slider flex items-center flex-row-reverse">
+        <div class="swiper-wrapper" style="height: 300px;">
+          <div class="swiper-slide">
+            @@include('components/testimonial-card.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('components/testimonial-card.html')
+          </div>
+          <div class="swiper-slide">
+            @@include('components/testimonial-card.html')
           </div>
         </div>
-        <div class="bg-theme-light p-10 rounded-2xl">
-          <div>
-            <div class="flex items-center gap-5">
-              <div>
-                <img src="images/icon-11.png" alt="icon" class="hidden sm:block">
-                <img src="images/customer-2.png" alt="customer" class="max-w-20 block sm:hidden">
-                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nulla metus quisque aenean.
-                  Ornare amet facilisi aliquam tortor cursus auctor volutpat fringilla convallis. </p>
-              </div>
-              <div>
-                <img src="images/customer-2.png" alt="customer" class="max-w-72 hidden sm:block">
-              </div>
-            </div>
-            <h6 class="pt-5">Andrew Saymonds</h6>
-          </div>
-        </div>
-        <div class="bg-theme-light p-10 rounded-2xl">
-          <div>
-            <div class="flex items-center gap-5">
-              <div>
-                <img src="images/icon-12.png" alt="icon" class="hidden sm:block">
-                <img src="images/customer-3.png" alt="customer" class="max-w-20 block sm:hidden">
-                <p class=" pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nulla metus quisque aenean.
-                  Ornare amet facilisi aliquam tortor cursus auctor volutpat fringilla convallis. </p>
-              </div>
-              <div>
-                <img src="images/customer-3.png" alt="customer" class="max-w-72 hidden sm:block">
-              </div>
-            </div>
-            <h6 class="pt-5">Andrew Saymonds</h6>
-          </div>
-        </div>
+        <div class="testimonial-slider-pagination grid justify-items-center mx-5 "></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- /Testimonials -->
 
 @@include('components/download-theme.html')

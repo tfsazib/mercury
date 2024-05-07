@@ -37,7 +37,8 @@
 
   // ####################### Testimonial Slider #########################
   new Swiper(".testimonial-slider", {
-    spaceBetween: 24,
+    // spaceBetween: 24,
+    direction: "vertical",
     loop: true,
     pagination: {
       el: ".testimonial-slider-pagination",
@@ -46,10 +47,10 @@
     },
     breakpoints: {
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 1,
       },
     },
   });

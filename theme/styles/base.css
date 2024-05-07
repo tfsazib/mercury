@@ -32,14 +32,7 @@ body {
 
     --tw-text-opacity: 1;
 
-    color: rgb(255 255 255 / var(--tw-text-opacity))
-}
-
-body:is(.dark *) {
-
-    background-color: ;
-
-    color: 
+    color: rgb(186 186 186 / var(--tw-text-opacity))
 }
 
 h1,
@@ -58,16 +51,6 @@ h6 {
     --tw-text-opacity: 1;
 
     color: rgb(255 255 255 / var(--tw-text-opacity))
-}
-
-h1:is(.dark *),
-h2:is(.dark *),
-h3:is(.dark *),
-h4:is(.dark *),
-h5:is(.dark *),
-h6:is(.dark *) {
-
-    color: 
 }
 
 h1,
@@ -151,11 +134,4 @@ blockquote > p {
     margin-top: 0px !important;
 
     margin-bottom: 0px !important
-}
-
-p {
-
-    --tw-text-opacity: 1;
-
-    color: rgb(186 186 186 / var(--tw-text-opacity))
 }
