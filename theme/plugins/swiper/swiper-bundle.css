@@ -568,6 +568,7 @@ button.swiper-pagination-bullet {
   opacity: 0;
   z-index: -1000;
 }
+
 .swiper-free-mode > .swiper-wrapper {
   transition-timing-function: ease-out;
   margin: 0 auto;

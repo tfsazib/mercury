@@ -6,32 +6,37 @@
  */
 
 .section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-@media (min-width: 1280px) {
-  .section {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-}
-.section-sm {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 @media (min-width: 1280px) {
-  .section-sm {
+  .section {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+.section-sm {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 1280px) {
+  .section-sm {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1320px;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
 .form-input {
@@ -164,6 +169,28 @@
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(2 131 252 / var(--tw-bg-opacity));
+}
+
+.swiper-size {
+  height: 250px;
+}
+
+@media (min-width: 540px) {
+  .swiper-size {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-size {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .swiper-size {
+    height: 300px;
+  }
 }
 
 .video {
