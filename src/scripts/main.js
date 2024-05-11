@@ -37,8 +37,8 @@
 
   // ####################### Testimonial Slider #########################
   new Swiper(".testimonial-slider", {
-    // spaceBetween: 24,
-    direction: "vertical",
+    spaceBetween: 24,
+    direction: "horizontal",
     loop: true,
     pagination: {
       el: ".testimonial-slider-pagination",
@@ -46,11 +46,8 @@
       clickable: true,
     },
     breakpoints: {
-      768: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 1,
+      1024: {
+        direction: "vertical",
       },
     },
   });
@@ -166,38 +163,38 @@
 
 
 
-//counter
-function counter(el, duration) {
-  const endValue = Number(el.innerText.replace(/\D/gi, ""));
-  const text = el.innerText.replace(/\W|\d/gi, "");
-  const timeStep = Math.round(duration / endValue);
-  let current = 0;
-  
-  const timer = setInterval(() => {
-    if (current > endValue) {
-      current = endValue;
-    } else {
-      current += 1;
-    }
-    el.innerText = current + text;
-    if (current === endValue) {
-      clearInterval(timer);
-    }
-  }, timeStep);
-}
+  //counter
+  function counter(el, duration) {
+    const endValue = Number(el.innerText.replace(/\D/gi, ""));
+    const text = el.innerText.replace(/\W|\d/gi, "");
+    const timeStep = Math.round(duration / endValue);
+    let current = 0;
 
-document.querySelectorAll(".counter .count").forEach((count) => {
-  counter(count, 500);
-});
+    const timer = setInterval(() => {
+      if (current > endValue) {
+        current = endValue;
+      } else {
+        current += 1;
+      }
+      el.innerText = current + text;
+      if (current === endValue) {
+        clearInterval(timer);
+      }
+    }, timeStep);
+  }
+
+  document.querySelectorAll(".counter .count").forEach((count) => {
+    counter(count, 500);
+  });
 
 
- //play youtube-video
- const videoPlayBtn = document.querySelector(".video-play-btn");
- if (videoPlayBtn) {
-   videoPlayBtn.addEventListener("click", function () {
-     const videoPlayer = this.closest(".video").querySelector(".video-player");
-     videoPlayer.classList.remove("hidden");
-   });
- }
+  //play youtube-video
+  const videoPlayBtn = document.querySelector(".video-play-btn");
+  if (videoPlayBtn) {
+    videoPlayBtn.addEventListener("click", function () {
+      const videoPlayer = this.closest(".video").querySelector(".video-player");
+      videoPlayer.classList.remove("hidden");
+    });
+  }
 
 })();

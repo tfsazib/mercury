@@ -1,8 +1,21 @@
-<footer class="relative">
+<footer class="relative overflow-hidden">
   <!-- circle-pattern -->
-  <img data-src="images/bg-circle-pattern-6.svg" alt="circle-pattern" class="text-quaternary absolute bottom-0 right-0 w-28 xl:w-auto" />
-  <img data-src="images/bg-circle-pattern-5.svg" alt="circle-pattern" class="text-secondary absolute bottom-0 left-0 w-20 xl:w-auto" />
-  <!-- circle-pattern end-->
+  <div class="absolute bottom-[-120px] lg:bottom-[-200px] left-[-100px] lg:left-[-200px] -z-[1]">
+    <span class="relative m-5">
+      @@include('components/background-circle-pattern.html')
+      <span
+        class="absolute top-[55px] md:top-[60px] lg:top-[90px] left-[20px] md:left-[15px] lg:left-[45px] border-[20px] lg:border-[30px] w-[130px] lg:w-[256px] h-[130px] lg:h-[256px] border-secondary rounded-full bg-body"></span>
+    </span>
+  </div>
+
+  <div class="absolute bottom-[-120px] lg:bottom-[-200px] right-[-100px] lg:right-[-200px] -z-[1]">
+    <span class="relative m-5">
+      @@include('components/background-circle-pattern.html')
+      <span
+        class="absolute top-[55px] md:top-[60px] lg:top-[90px] left-[20px] md:left-[15px] lg:left-[45px] border-[20px] lg:border-[30px] w-[130px] lg:w-[256px] h-[130px] lg:h-[256px] border-quaternary rounded-full bg-body"></span>
+    </span>
+  </div>
+  <!-- circle-pattern end -->
 
   <div class="container">
     <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-10 py-10 mt-14 border-y border-border">
@@ -15,7 +28,7 @@
       </div>
       <div>
         <h6 class="mb-4">Socials</h6>
-        <a href="mailto:themefisher@gmail.com" class="text-sm hover:text-dark">themefisher@gmail.com</a>
+        <a href="mailto:mercury.info@gmail.com" class="text-sm hover:text-dark">mercury.info@gmail.com</a>
         <div class="flex items-center gap-3 mt-3">
           <ul class="social-icons">
             <li>
@@ -88,8 +101,8 @@
   <div class=" py-7">
     <div class="container text-center text-[#A4A4A4]">
       <p>
-        Designed By Themefisher, Developed by
-        <a target="_blank" href="https://gethugothemes.com/">Gethugothemes</a>
+        Design and Developed by
+        <a target="_blank" href="https://themefisher.com/">Themefisher</a>
       </p>
     </div>
   </div>
@@ -100,14 +113,5 @@
 <!-- <script src="plugins/jquery/jquery.min.js"></script> -->
 <!-- Swiper JS -->
 <script src="plugins/swiper/swiper-bundle.js"></script>
-<!-- inlineSVG -->
-<script src="plugins/inline-svg/svg-injector.min.js"></script>
-<script>
-  // Elements to inject
-  var mySVGsToInject = document.querySelectorAll('img[data-src]');
-
-  // Do the injection
-  SVGInjector(mySVGsToInject);
-</script>
 <!-- Main Script -->
 <script src="scripts/main.js"></script>

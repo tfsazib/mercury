@@ -1,17 +1,28 @@
 <section class="relative">
   <div class="pt-14">
     <!-- circle-pattern -->
-        <img data-src="images/bg-circle-pattern-2.svg" alt="circle-pattern" class="text-tertiary absolute bottom-[20%] left-0 w-20 xl:w-auto" />
+    <div class="absolute top-[-50px] left-[-120px] lg:left-[-230px] -z-[1]">
+      <span class="relative m-5">
+        @@include('components/background-circle-pattern.html')
+        <span
+          class="absolute top-[55px] md:top-[60px] lg:top-[90px] left-[20px] md:left-[15px] lg:left-[45px] border-[20px] lg:border-[30px] w-[130px] lg:w-[256px] h-[130px] lg:h-[256px] border-tertiary rounded-full bg-body"></span>
+      </span>
+    </div>
     <!-- circle-pattern end-->
 
     <div class="container">
       <div class="grid xl:grid-cols-2 gap-5 xl:gap-14 bg-theme-light p-10 xl:p-20 rounded-2xl">
         <div>
-          <h1 class=" text-h3 lg:text-h1 pb-5">Helping teams in the world with focus</h1>
-          <a href="#" class="btn btn-primary">Download The Theme</a>
+          <h1 class=" text-h3 lg:text-h1 2xl:pb-5">Helping teams in the world with focus</h1>
+          <div class="hidden xl:inline-block">
+            <a href="#" class="btn btn-primary">Download The Theme</a>
+          </div>
         </div>
         <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At nulla metus quisque aenean. Ornare amet facilisi aliquam tortor cursus auctor volutpat fringilla convallis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iusto?</p>
+          <div class="inline-block xl:hidden pt-5">
+            <a href="#" class="btn btn-primary ">Download The Theme</a>
+          </div>
         </div>
       </div>
     </div>

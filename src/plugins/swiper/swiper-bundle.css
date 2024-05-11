@@ -367,6 +367,16 @@ button.swiper-pagination-bullet {
   top: 50%;
   transform: translate3d(-50%, 0px, 0);
 }
+
+@media only screen and (max-width: 1024px) {
+  .swiper-vertical > .swiper-pagination-bullets,
+  .swiper-pagination-vertical.swiper-pagination-bullets {
+    right: 10px;
+    top: 50%;
+    transform: translate3d(0px, -50%, 0);
+  }
+}
+
 .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-vertical.swiper-pagination-bullets
   .swiper-pagination-bullet {

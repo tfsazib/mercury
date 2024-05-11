@@ -1,10 +1,31 @@
-<!-- Banner -->
-<section class="section">
+<section class="section relative overflow-x-hidden">
   <!-- circle-pattern -->
-  <img data-src="images/bg-circle-pattern-2.svg" alt="circle-pattern"
-    class="text-quaternary absolute top-[20%] left-0 w-20 xl:w-auto" />
-  <img data-src="images/bg-circle-pattern-3.svg" alt="circle-pattern"
-    class="text-tertiary absolute top-[50%] right-0 w-20 xl:w-auto" />
+  <!-- Banner -->
+  <div class="absolute top-[-100px] lg:top-[-150px] right-[-110px] lg:right-[-200px]">
+    <span class="relative m-5">
+      @@include('components/background-circle-pattern.html')
+      <span
+        class="absolute top-[55px] md:top-[60px] lg:top-[90px] left-[20px] md:left-[15px] lg:left-[45px] border-[20px] lg:border-[30px] w-[130px] lg:w-[256px] h-[130px] lg:h-[256px] border-secondary rounded-full bg-body"></span>
+    </span>
+  </div>
+
+  
+    <div class="absolute top-10 lg:top-14 left-[-120px] lg:left-[-230px] -z-[1]">
+      <span class="relative m-5">
+      @@include('components/background-circle-pattern.html')
+      <span
+      class="absolute top-[55px] md:top-[60px] lg:top-[90px] left-[20px] md:left-[15px] lg:left-[45px] border-[20px] lg:border-[30px] w-[130px] lg:w-[256px] h-[130px] lg:h-[256px] border-quaternary rounded-full bg-body"></span>
+    </span>
+  </div>
+
+
+  <div class="absolute bottom-0 lg:bottom-32 right-[-110px] lg:right-[-200px] -z-[1]">
+    <span class="relative m-5">
+      @@include('components/background-circle-pattern.html')
+      <span
+        class="absolute top-[55px] md:top-[60px] lg:top-[90px] left-[20px] md:left-[15px] lg:left-[45px] border-[20px] lg:border-[30px] w-[130px] lg:w-[256px] h-[130px] lg:h-[256px] border-tertiary rounded-full bg-body"></span>
+    </span>
+  </div>
   <!-- circle-pattern end -->
 
   <div class="container">
@@ -18,7 +39,7 @@
         </p>
         <div class="max-w-xl mx-auto flex justify-between items-center bg-theme-light rounded-3xl mt-4 ">
           <input type="text" placeholder="Enter Your Email For Subscription"
-            class="w-full bg-theme-light rounded-3xl border-none focus:ring-0 focus:outline-none text-sm px-5 text-light">
+            class="w-full bg-theme-light rounded-3xl border-none focus:ring-0 focus:outline-none text-sm px-5 placeholder-light">
           <button class="btn btn-primary">Subscribe Now</button>
         </div>
       </div>
@@ -137,13 +158,12 @@
         </ul>
       </div>
       <div class="relative max-w-screen-md mx-auto">
-        <img src="images/detailes-map-1.png" alt="detailes-map" class="mx-auto ">
-        <img src="images/detailes-map-2.png" alt="detailes-map"
-          class="absolute top-1/2 bottom-1/2 -right-20 transform -translate-y-1/2 hidden sm:block">
-        <img src="images/detailes-map-3.png" alt="detailes-map"
-          class="absolute -bottom-16 -left-10 -z-10 hidden sm:block">
-        <img src="images/detailes-map-4.png" alt="detailes-map"
-          class="absolute -top-16 -right-10 -z-10 hidden sm:block">
+        <img src="images/details-map-1.png" alt="details-map" class="mx-auto w-full lg:max-w-[90%]">
+        <img src="images/details-map-2.png" alt="details-map"
+          class="absolute top-1/2 bottom-1/2 -right-4 transform -translate-y-1/2 hidden md:block">
+        <img src="images/details-map-3.png" alt="details-map"
+          class="absolute -bottom-16 -left-10 -z-10 hidden md:block">
+        <img src="images/details-map-4.png" alt="details-map" class="absolute -top-16 -right-4 -z-10 hidden md:block">
       </div>
     </div>
   </div>

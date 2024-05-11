@@ -1,5 +1,5 @@
 .btn{
-  @apply inline-block rounded-3xl px-5 py-2 border-2 border-transparent capitalize transition whitespace-nowrap text-dark;
+  @apply inline-block rounded-3xl px-5 py-2.5 border-transparent capitalize transition whitespace-nowrap text-dark;
 }
 
 .btn-sm {
@@ -7,16 +7,16 @@
 }
 
 .btn-primary {
-  @apply bg-gradient-to-r to-primary from-primary;
+  @apply bg-gradient-to-r to-primary from-white/40 bg-primary;
   &:hover{
-    box-shadow: 0px 0px 35px #0283fc9c;
+    @apply shadow-lg  shadow-primary/50;
   };
 }
 
 .btn-outline-primary{
-  @apply border-2 border-primary hover:bg-primary hover:border-transparent;
+  @apply border-2 border-primary hover:bg-primary hover:border-transparent py-2;
   &:hover{
-    box-shadow: 0px 0px 25px #0283fc9c;
+    @apply shadow-lg  shadow-primary/50;
   }
 }
 

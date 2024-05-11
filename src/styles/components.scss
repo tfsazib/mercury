@@ -93,12 +93,17 @@
 }
 
 .swiper-pagination-bullet-active {
-  @apply h-12 w-2.5 rounded-xl bg-primary;
+  @apply w-12 h-2.5 lg:h-12 lg:w-2.5 rounded-xl bg-primary;
 }
 
 .swiper-size {
-  @apply h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[300px];
+  @apply w-full h-[300px] lg:h-[400px] xl:h-[300px];
 }
+
+.testimonial-slider-pagination{
+  @apply max-w-[93vw] sm:max-w-[514px] md:max-w-[736px] xl:w-auto flex lg:grid justify-center lg:ml-2.5 lg:mr-2.5 lg:mx-5;
+}
+
 
 //video
 .video {
