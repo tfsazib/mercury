@@ -1,16 +1,19 @@
 .bg-gradient {
-  @apply bg-gradient-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%]  ;
+  @apply bg-gradient-to-b from-[rgba(249, 249, 249, 1)] from-[0.53%] to-white to-[83.28%];
 }
 
 .rounded-sm {
   @apply rounded-[4px];
 }
+
 .rounded {
   @apply rounded-[6px];
 }
+
 .rounded-lg {
   @apply rounded-[12px];
 }
+
 .rounded-xl {
   @apply rounded-[16px];
 }
@@ -22,4 +25,18 @@
 body {
   @apply w-full h-full mx-auto object-cover bg-fixed;
   background-image: url('../images/bg-pattern.png');
+}
+
+.shape {
+  @apply w-[150px] h-[150px] border-[20px] border-primary rounded-full inline-block relative;
+
+  &::before {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%234D5B6EFF' stroke-width='4' stroke-dasharray='2%2c 8' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
+    @apply content-[''] rounded-full absolute top-[-30px] left-[-30px] right-[-30px] bottom-[-30px] z-[-1];
+
+  }
+  &::after {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%234D5B6EFF' stroke-width='4' stroke-dasharray='2%2c 8' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
+    @apply content-[''] rounded-full absolute top-[-40px] left-[-40px] right-[-40px] bottom-[-40px] z-[-1];
+  }
 }
