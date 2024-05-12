@@ -12,7 +12,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .header {
-  @apply bg-body py-6 ;
+  @apply fixed top-0 left-0 right-0 py-6;
 }
 
 // navbar items
