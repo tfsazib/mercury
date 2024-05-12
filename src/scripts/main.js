@@ -200,7 +200,7 @@
   // ############################## on scroll change navbar color ##############################
   const navbar = document.querySelector('.header');
   window.onscroll = () => {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 100) {
       navbar.classList.add('bg-body');
     } else {
       navbar.classList.remove('bg-body');
