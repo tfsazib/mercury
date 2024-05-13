@@ -155,15 +155,15 @@
 
 // tab
 .tab {
-  @apply overflow-hidden rounded-lg border border-border;
+  @apply overflow-hidden rounded-lg;
 
   &-nav {
-    @apply flex gap-5 border-b border-border bg-theme-light;
+    @apply flex gap-5 border-y border-border bg-theme-light py-4;
     @apply m-0 #{!important};
     @apply list-none #{!important};
 
     &-item {
-      @apply cursor-pointer inline-block rounded-3xl px-5 py-2 border-2 border-transparent capitalize transition whitespace-nowrap text-text border-white;
+      @apply cursor-pointer inline-block rounded-3xl px-5 py-2 border-2 border-transparent capitalize transition whitespace-nowrap text-dark border-white;
       @apply my-0 #{!important};
       @apply px-8 #{!important};
 

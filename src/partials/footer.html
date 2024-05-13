@@ -1,12 +1,7 @@
 <footer class="relative overflow-hidden">
   <!-- circle-pattern -->
-  <span class="border-[20px] lg:border-[30px] border-quaternary rounded-full absolute bottom-[-60px] lg:bottom-[-120px] right-[-60px] lg:right-[-100px] -z-[1]">
-    @@include('components/background-circle-pattern.html')
-  </span>
-
-  <span class="border-[20px] lg:border-[30px] border-secondary rounded-full absolute bottom-[-60px] lg:bottom-[-120px] left-[-60px] lg:left-[-100px] -z-[1]">
-    @@include('components/background-circle-pattern.html')
-  </span>
+    @@include('components/background-circle-pattern.html', {class: "border-quaternary bottom-[-60px] lg:bottom-[-120px] right-[-60px] lg:right-[-100px]"})
+    @@include('components/background-circle-pattern.html', {class: "border-secondary bottom-[-60px] lg:bottom-[-120px] left-[-60px] lg:left-[-100px]"})
   <!-- circle-pattern end -->
 
   <div class="container">
@@ -94,7 +89,7 @@
     <div class="container text-center text-[#A4A4A4]">
       <p>
         Design and Developed by
-        <a target="_blank" href="https://themefisher.com/">Themefisher</a>
+        <a target="_blank" href="https://themefisher.com/" class="underline hover:text-dark">Themefisher</a>
       </p>
     </div>
   </div>
