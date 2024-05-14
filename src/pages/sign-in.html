@@ -1,12 +1,16 @@
-<section class="section pt-[10rem] lg:pt-[14rem]">
+<section class="section pt-[10rem] lg:pt-[14rem] relative overflow-hidden">
+    <!-- circle-pattern -->
+
+    @@include('components/background-circle-pattern.html', { class: "border-secondary top-[-50px] lg:top-[-100px] right-[-50px] lg:right-[-100px]" })
+
     <div class="container">
-        <div class="flex flex-col lg:flex-row">
-            <div class="flex-1 p-10">
+        <div class="row flex-col-reverse lg:flex-row">
+            <div class="lg:col-6 pt-10 sm:p-10">
                 <div>
                     <h1 class="mb-2 text-h3 lg:text-h1">Sign In</h1>
                     <p>Donec sollicitudin molestie malesda sollitudin</p>
                 </div>
-                <div class="pt-10 pb-5">
+                <div class="py-10">
                     <a href="#"
                         class="flex items-center justify-center gap-2 cursor-pointer py-4 border border-border rounded">
                         <img src="images/google-icon.png" alt="icon">
@@ -14,7 +18,7 @@
                     </a>
                     <div class="w-full h-[1px] bg-border mt-10 relative">
                         <span
-                            class="bg-body px-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">Or
+                            class="bg-body px-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap">Or
                             Sign In With Email</span>
                     </div>
                 </div>
@@ -34,7 +38,7 @@
                     </div>
                 </form>
             </div>
-            <div class="flex-1 bg-theme-light grid justify-center items-center p-10">
+            <div class="lg:col-6 bg-theme-light grid justify-center items-center p-10">
                 <img src="images/sign-in.png" alt="sign-in "
                     class="w-full md:max-w-[450px] border border-dashed border-border p-5 rounded-2xl">
             </div>

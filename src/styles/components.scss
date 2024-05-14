@@ -114,7 +114,7 @@
   }
 
   &-play-btn {
-    @apply absolute top-1/2 left-1/2 z-10 flex h-[78px] w-[78px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary;
+    @apply absolute top-1/2 left-1/2 z-10 flex h-[50px] sm:h-[78px] w-[50px] sm:w-[78px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary;
     animation: shadow-pulse 1.5s infinite;
 
     &::after {
@@ -158,7 +158,7 @@
   @apply overflow-hidden rounded-lg;
 
   &-nav {
-    @apply flex gap-5 border-y border-border bg-theme-light py-4;
+    @apply flex flex-wrap justify-center gap-5 border-y border-border bg-theme-light py-4;
     @apply m-0 #{!important};
     @apply list-none #{!important};
 
@@ -175,7 +175,7 @@
 
   &-content {
     &-panel {
-      @apply hidden p-8;
+      @apply hidden;
 
       p {
         @apply mb-0;
