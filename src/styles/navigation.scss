@@ -44,7 +44,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-list {
-  @apply z-10 min-w-[180px] rounded bg-theme-light p-4 shadow;
+  @apply z-10 rounded bg-theme-light p-4 shadow;
 }
 
 .nav-dropdown-item {
